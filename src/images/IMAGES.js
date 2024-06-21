@@ -1,0 +1,25 @@
+const IMAGES = {
+  image1: new URL('../assets/01d.png', import.meta.url).href,
+  image2: new URL('../assets/01n.png', import.meta.url).href,
+  image3: new URL('../assets/02d.png', import.meta.url).href,
+  image4: new URL('../assets/02n.png', import.meta.url).href,
+  image5: new URL('../assets/03d.png', import.meta.url).href,
+  image6: new URL('../assets/03n.png', import.meta.url).href,
+  image7: new URL('../assets/04d.png', import.meta.url).href,
+  image8: new URL('../assets/04n.png', import.meta.url).href,
+  image9: new URL('../assets/09d.png', import.meta.url).href,
+  image10: new URL('../assets/09n.png', import.meta.url).href,
+  image11: new URL('../assets/10d.png', import.meta.url).href,
+  image12: new URL('../assets/10n.png', import.meta.url).href,
+  image13: new URL('../assets/11d.png', import.meta.url).href,
+  image14: new URL('../assets/11n.png', import.meta.url).href,
+  image15: new URL('../assets/13d.png', import.meta.url).href,
+  image16: new URL('../assets/13n.png', import.meta.url).href,
+  image17: new URL('../assets/50d.png', import.meta.url).href,
+  image18: new URL('../assets/50n.png', import.meta.url).href,
+  image19: new URL('../assets/humidity.png', import.meta.url).href,
+  image20: new URL('../assets/rain.png', import.meta.url).href,
+  image21: new URL('../assets/wind.png', import.meta.url).href,
+};
+
+export default IMAGES;
