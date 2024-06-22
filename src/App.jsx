@@ -14,13 +14,21 @@ function App() {
       .then((datas) => setdata(datas));
   }, [term]);
 
+
+  const handleEnterSearch = (e) => {
+    if(e.key === 'Enter'){
+      setTerm(input)
+      setInput('')
+    }
+  }
+
   return (
     <>
       <div className="flex h-screen justify-center items-center p-4" >
         <div className={`${data && data.weather[0].icon.slice(-1) === 'n' ? 'bg-night' : 'bg-day'} w-[500px] h-[600px] rounded-[10px] p-8`}>
           {/* Search Input */}
           <div className="flex justify-between items-center gap-3 mb-6">
-            <input onChange={(e) => setInput(e.target.value)} className="py-2 px-4 rounded-full text-[14px] text-slate-400 w-full outline-none focus:shadow-lg focus:shadow-slate-500" type="text" placeholder="Search City..." />
+            <input onChange={(e) => setInput(e.target.value)} onKeyDown={handleEnterSearch} value={input} className="py-2 px-4 rounded-full text-[14px] text-slate-400 w-full outline-none focus:shadow-lg focus:shadow-slate-500" type="text" placeholder="Search City..." />
             <div
               onClick={() => {
                 setTerm(input);
