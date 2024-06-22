@@ -4,3 +4,13 @@
 .bg-day {
   background: linear-gradient(167deg, #29b2dd 0%, #3ad 47.38%, #2dc8ea 100%);
 }
+
+body {
+  background-image: url('./assets/bg-full.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
